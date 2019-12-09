@@ -10,13 +10,31 @@ module.exports = {
   },
   themeConfig: {
     nav: [ // 导航栏配置
-      { text: 'JAVASCRIPT', link: '/pages/articels/a/' },
-      { text: 'CSS', link: '/algorithm/' },
-      { text: 'VUE', link: '/algorithm/' },
-      { text: 'NODE', link: '/algorithm/' },
+      { text: 'VUE', link: '/pages/vue/' },
+      { text: 'JAVASCRIPT', link: '/pages/js/' },
+      { text: 'NODE', link: '/pages/node/' },
+      { text: 'CSS', link: '/pages/css/' },
+      { text: 'OTHERS', link: '/pages/others/' },
       { text: 'GitHub', link: 'https://github.com/zl3580' }
     ],
-    sidebar: 'auto', // 侧边栏配置
+    sidebar: {
+      "/pages/js/": [
+        '',
+        '1'
+      ],
+      "/pages/vue/": [
+        '',
+      ],
+      "/pages/node/": [
+        '',
+      ],
+      "/pages/css/": [
+        '',
+      ],
+      "/pages/others/": [
+        '',
+      ],
+    },
     sidebarDepth: 2, // 侧边栏显示2级
   }
 };
